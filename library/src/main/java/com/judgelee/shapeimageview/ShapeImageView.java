@@ -19,6 +19,12 @@ import com.judgelee.utils.UIUtils;
  * Author: judgelee
  * Date: 2019/3/21
  * Desc: 支持指定Shape的图片
+ * 方式有三种：
+ *    1.透明图覆盖 （绘制效率低，且需要制作图片，不推荐）
+ *    2.BitmapShader （操作灵活，此处使用该方式）
+ *    3.Xfermode （图层叠加，效率低）
+ *    4.v4包 RoundBitmapDrawable （只能实现圆角矩形图片，内部使用BitmapShader）
+ *    5.v7包 CardView （功能强大，必须5.0系统以上显示圆角）
  */
 public class ShapeImageView extends AppCompatImageView {
 
