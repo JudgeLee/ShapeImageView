@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ShapeImageView">
+    <attr name="imageShape">
+      <enum name="circle" value="0x01" />
+      <enum name="oval" value="0x02" />
+      <enum name="rectangle" value="0x03" />
+      <enum name="roundRectangle" value="0x04" />
+    </attr>
+
+    <attr name="shapeRadiusX" format="dimension" />
+    <attr name="shapeRadiusY" format="dimension" />
+    <attr name="shapeBorderWidth" format="dimension" />
+    <attr name="shapeBorderColor" format="color" />
+    <attr name="imageText" format="string" />
+    <attr name="imageTextSize" format="dimension" />
+    <attr name="imageTextColor" format="color" />
+
+  </declare-styleable>
+
+</resources>
